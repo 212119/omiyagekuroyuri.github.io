@@ -1,0 +1,2052 @@
+@charset "utf-8";
+
+/* ここから共通部分 */
+*,
+*:before,
+*:after{
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing:border-box;
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration:none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+
+body{
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Zen Maru Gothic', sans-serif;
+font-family: 'Zen Old Mincho', serif;
+line-height: 2;
+color: black;
+font-size: 1.7rem;
+width: 100%;
+}
+
+.content-wrapper{
+  padding-left: 4rem; 
+ padding-right: 4rem;
+}
+
+img{
+  width: 100%;
+}
+
+.title-desc{
+  padding-bottom: 5%;
+  max-width: 1200px;
+  width: 60%; 
+  margin: 0 auto;
+}
+
+/* ここまで共通部分 */
+
+  /* ここからheader部分 */
+.header-container{
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+  margin: 0 auto;
+  position: relative;
+  margin-left:50px;
+}
+/* ロゴ画像 */
+header h1 img{
+  width: 200px;
+}
+/* ナビゲーション */
+.header-container ul{
+  display: flex;
+}
+header li{
+  padding-left: 3rem;
+}
+header a:hover{
+color: white;
+}
+
+
+/*大きな背景画像 */
+#home{
+  background-image: url(../images/firstview/background.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  z-index: 5;
+}
+
+
+/* ここまでheader */
+
+/* 下呂温泉で、大正時代から続くお土産屋 */
+.omiyageya{
+  position: relative;
+}
+
+#big-sentence{
+  width: 36%;
+  min-width: 200px;
+  position: absolute;
+  right: 34%;
+  top: 142px;
+}
+
+/* ここからmain */
+/* 山のイラスト */
+main .fix-mountain{
+  position: relative;
+}
+
+#mountain{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index: 3;
+  font-size: 0;
+  opacity: 70%;
+}
+
+/* TOPへ戻る */
+.fix-mountain .top{
+  position:fixed;
+  bottom:   3%;
+  right: 10%;
+  z-index: 4;
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* おみやげ黒百合について */
+.about-shop{
+  display: flex;
+  align-items: center;
+  padding-top: 10%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-shop section{
+  width: 50%;
+  max-width: 100%;
+  margin-left: 3%;
+}
+
+
+.about-shop img{
+  width: 45%;
+  height:auto;
+  max-width: 100%;
+  margin-left: 5%;
+}
+
+/* 下呂温泉について */
+.about-gero{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-top: 10%; 
+  padding-bottom: 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-gero section{
+  width: 45%;
+  max-width: 100%;
+ margin-right: 2%;
+}
+
+.about-gero img{
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+  margin-right: 2%;
+}
+
+
+/* おみやげ */
+.title{
+  max-width: 1200px;
+  width: 25%;
+  height: auto;
+  padding-top: 6%;
+  padding-bottom:5%;
+  display: block;
+  margin: 0 auto;
+}
+
+.omiyage-goods{
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 9%;
+}
+
+#souvenir{
+  background-color: rgba(232, 184, 119,.25); 
+  width: 100%;
+}
+.omiyage-goods .mist{
+  width: 20%;
+  max-width: 100%;
+  margin-left: 12%;
+}
+.omiyage-goods .kei{
+  width: 25%;
+  max-width: 100%;
+  margin-left: 5%;
+}
+.omiyage-goods .nyuyokuzai{
+  width: 21%;
+  max-width: 100%;
+  margin-left: 13%;
+}
+
+/* おみやげ詳細を見るのボタン */
+#souvenir .btn{
+  width: 20%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 20px;
+  background-color:white ;
+  color: black;
+  border-style:  dotted;
+  border-color: gray;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+#souvenir .btn:hover{
+  margin-top: 5px;
+  box-shadow: 0 4px rgba(191, 191, 191, 1);
+  background-color: white ;
+}
+.omiyagebtn{
+  padding-bottom: 10%;
+}
+
+/* 湯の町散策コース */
+#course{
+  background-color: rgba(176, 215, 211,.3); 
+  padding-bottom: 15%;
+  width: 100%;
+}
+
+#course .sanpoimg{
+  width: 50%;
+  max-width: 100%;
+  padding-top: 1%;
+}
+
+.sanpopic{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* 湯の町詳細を見るのボタン */
+#course  .btnsec{
+  width: 30%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px 20px;
+  background-color:white ;
+  border-style:  dotted;
+  border-color: gray;
+  border-width: 2px;
+  border-radius: 25px;
+  font-size: 2rem;
+}
+
+#course .btnsec:hover{
+  margin-top: 5px;
+  box-shadow: 0 4px rgba(191, 191, 191, 1);
+  background-color: white ;
+}
+.btnsec{
+  padding-bottom: 15%;
+}
+
+/* おみやげ黒百合へのアクセス */
+#access{
+ max-width: 960px;
+ width: 100%;
+ margin: 0 auto;
+ padding-bottom: 10%;
+
+}
+
+#access ul{
+padding-left: 5%;
+width: 50%;
+}
+
+.accesspic{
+  display: flex;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+#access .howtoget{
+  width: 50%;
+  padding-top: 3%;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+/* 車でのアクセス */
+.access-car{
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  z-index: 2;
+  font-size: 1.3rem;
+  width: 45%;
+}
+/* 電車でのアクセス */
+.access-train{
+  position: absolute;
+  z-index: 3;
+  top:45%;
+  left:54%;
+  font-size: 1.3rem;
+  width: 45%;
+}
+
+.title-course{
+  width: 30%;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom:7%;
+  display: block;
+  margin: 0 auto;
+}
+
+.title-access{
+  width: 50%;
+  padding-top: 10%;
+  padding-bottom:9%;
+  display: block;
+  margin: 0 auto;
+}
+
+#access .map{
+padding-left: 5%;
+}
+
+/* ------------------------ここからお土産紹介ページ */
+/* おみやげページheader */
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  padding-top: 2.3%;
+  padding-bottom: 5%;
+  max-width: 960px;
+  width: 100%;
+  margin:0 auto;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+/* headerここまで */
+
+.souvenir-wrapper{
+  background-color: rgba(232, 184, 119,.25); 
+}
+
+.souvenir-goods{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;  
+}
+
+/* 文字サイズ */
+.souvenir-goods .mini{
+  font-size: 1.4rem;
+}
+
+/* フレックスボックス */
+.gero-mist,
+.gero-kei
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 15%;
+  padding: 3% 0%;
+}
+.gero-nyuyokuzai
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 3% 0%;
+}
+
+/* 下呂温泉みすと */
+.goods-mistpic{
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  padding-left: 5%;
+  padding-bottom:1.5%;
+}
+
+.mist-desc{
+  width: 70%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
+}
+
+.mist-hukidasi{
+  max-width: 60%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+/* くまちゃんのけいちゃん */
+
+.goods-keipic{
+  width: 31%;
+  max-width: 100%;
+  height: auto;
+  padding:3.5% 0;
+  padding-left: 0.7%;
+}
+
+.kei-desc{
+  width: 60%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
+}
+
+.hukidasi-kei{
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+
+/* 鷺の足湯の入浴剤 */
+.goods-sagipic{
+  width: 31%;
+  max-width: 100%;
+  height: auto;
+  padding:3% 0;
+  padding-left: 5%;
+}
+.nyuyoku-desc{
+  width: 60%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
+}
+.sagi-hukidasi{
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+
+
+
+
+/* ------------ここから湯の町散策コース */
+
+.sanpo-wrapper{
+  background-color: rgba(157, 206, 201, .8);
+}
+
+/* 背景イラスト */
+#walk{
+  background-image: url(../images/walkaound/test.png);
+  background-position: center top;
+}
+
+.walkpic{
+  width: 40%;
+  margin: 0 auto;
+
+}
+
+/* 画像のサイズ */
+
+.first-line{ 
+  display: flex;
+}
+.course-introduce .marui{
+ width: 40rem;
+}
+.course-introduce{
+  width: 960px;
+  margin:0 auto;
+}
+
+/* 文字 */
+.course-introduce .time{
+  width: 7rem;
+  position: absolute;
+  top: 170px;
+  left: 450px;
+}
+.course-introduce .time-sec{
+  width: 7rem;
+  position: absolute;
+  top: 250px;
+  right: 480px;
+}
+.course-introduce .right-p{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  font-size: 1.6rem;
+  width: 330px;
+}
+.course-introduce .left-p{
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 1.6rem;
+  width: 300px;
+}
+
+.left-p::first-line{
+  color: #339999;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.right-p::first-line{
+  color: #339999;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+/*右と左のセクション */
+.kuroyuri,
+.otera,
+.senda{
+position: relative;
+margin-left: 40px;
+}
+
+.sagi,
+.sakaya,
+.roten{
+  position: relative;
+  margin-left: 100px;
+  margin-top: 180px;
+}
+
+.roten .marui{
+  padding-bottom: 100px;
+}
+ /*フレックスボックス  */
+ .first-line,
+ .second-line,
+ .third-line{
+   display: flex;
+ }
+
+
+/* --------------------------------------------------ここからfooter */
+/* メインページのfooter */
+.main-footer{
+  padding-top: 40px;
+  padding-bottom: 150px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+ background-color: rgba(232, 184, 119,.25);
+}
+
+.main-footer nav{
+  padding-top: 20px;
+  padding-bottom: 30px;
+} 
+
+.main-footer nav a:hover{
+  color: gray;
+}
+
+/* おみやげページfooter */
+.omiyage-footer{
+  padding-top: 100px;
+  position: relative;
+  margin: 0 auto;
+ background-color: rgba(232, 184, 119,.25);
+ font-size: 0;
+}
+
+
+.omiyage-footer h1{
+  position:absolute; 
+ bottom: 5%;
+ left: 10%;
+ width: 15%;
+}
+
+/* 散歩ページfooter */
+.sanpo-footer{
+  background-color: rgba(157, 206, 201, .8);
+  padding-top: 100px;
+  position: relative;
+  margin: 0 auto;
+ font-size: 0;
+}
+
+.sanpo-footer h1{
+  position:absolute; 
+ bottom: 35%;
+ left: 43%;
+ width: 150px;
+}
+
+/* ---------------------------------------------------------------ここから960px以下のとき */
+
+@media (max-width:960px){
+
+  /* ここから共通部分 */
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+  
+  html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+  }
+  
+  a{
+    text-decoration:none;
+    color: black;
+  }
+  li{
+    list-style: none;
+  }
+  
+  body{
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  line-height: 2;
+  color: black;
+  font-size: 1.7rem;
+  width: 100%;
+  }
+  
+  .content-wrapper{
+    padding-left: 4rem; 
+   padding-right: 4rem;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  .title-desc{
+    padding-bottom: 7%;
+    max-width: 960px;
+    width: 80%; 
+    margin: 0 auto;
+  }
+  
+  /* ここまで共通部分 */
+  
+    /* ここからheader部分 */
+.header-container{
+  display: flex;
+  align-items: center;
+  padding-top: 17px;
+  margin: 0 auto;
+  position: relative;
+  margin-left:50px;
+}
+/* ロゴ画像 */
+header h1 img{
+  width: 170px;
+}
+/* ナビゲーション */
+.header-container ul{
+  display: block;
+}
+header li{
+  padding-left: 3rem;
+}
+header a:hover{
+color: white;
+}
+
+/* ハンバーガーメニュー */
+/* クリック前のボタン */
+.nav_toggle {
+  display: block;
+  position: fixed;
+  width: 3.5rem;
+  height: 2.6rem;
+  right: 4rem;
+  top: 2.6rem;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform .3s, opacity .4s;
+}
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+/* クリック後のボタン */
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-11px) rotate(45deg);
+}
+
+/* メニュー */
+.gnav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  background:rgba(189, 195, 199,.8);
+  z-index: 89;
+  text-align: center;
+}
+.nav_menu_ul{
+  padding-top: 7rem;
+}
+.nav_menu_ul li{
+margin-top: 4rem;  
+}
+
+.gnav.show {
+  opacity: 1;
+  visibility: visible;
+}
+/* ハンバーガーここまで */
+  /*大きな背景画像 */
+  #home{
+    background-image: url(../images/firstview/background.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    z-index: 5;
+  }
+  
+/* ここまでheader */
+/* 下呂温泉で、大正時代から続くお土産屋 */
+.omiyageya{
+  position: relative;
+}
+
+#big-sentence{
+  width: 40%;
+  min-width: 250px;
+  position: absolute;
+  right: 28%;
+  top: 160px;
+}
+/* ここからmain */
+
+  /* ここからmain */
+  /* 山のイラスト */
+main .fix-mountain{
+  position: relative;
+}
+#mountain{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index: 3;
+  font-size: 0;
+  opacity: 70%;
+}
+/* TOPへ戻る */
+.fix-mountain .top{
+  position:fixed;
+  bottom:   3%;
+  right: 10%;
+  z-index: 4;
+  color: white;
+  font-size: 2.5rem;
+}
+  /* おみやげ黒百合について */
+  .about-shop{
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .about-shop section{
+    width: 50%;
+    max-width: 100%;
+    margin-left: 3%;
+  }
+  
+  
+  .about-shop img{
+    width: 45%;
+    height:auto;
+    max-width: 100%;
+    margin-left: 5%;
+  }
+  
+  /* 下呂温泉について */
+  .about-gero{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 10%; 
+    padding-bottom: 10%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .about-gero section{
+    width: 45%;
+    max-width: 100%;
+   margin-right: 2%;
+  }
+  
+  .about-gero img{
+    width: 45%;
+    max-width: 100%;
+    height: auto;
+    margin-right: 2%;
+  }
+  
+
+  /* おみやげ */
+  .title{
+    max-width: 960px;
+    width: 37%;
+    height: auto;
+    padding-top: 6%;
+    padding-bottom:8%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .omiyage-goods{
+    display: flex;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 9%;
+  }
+  
+  #souvenir{
+    background-color: rgba(232, 184, 119,.25); 
+    width: 100%;
+  }
+  .omiyage-goods .mist{
+    width: 20%;
+    max-width: 100%;
+    margin-left: 12%;
+  }
+  .omiyage-goods .kei{
+    width: 25%;
+    max-width: 100%;
+    margin-left: 5%;
+  }
+  .omiyage-goods .nyuyokuzai{
+    width: 21%;
+    max-width: 100%;
+    margin-left: 13%;
+  }
+  
+  /* おみやげ詳細を見るのボタン */
+  #souvenir .btn{
+    width: 30%;
+    min-width: 150px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 20px;
+    background-color:white ;
+    color: black;
+    border-style:  dotted;
+    border-color: gray;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 2rem;
+  }
+  
+  #souvenir .btn:hover{
+    margin-top: 5px;
+    box-shadow: 0 4px rgba(191, 191, 191, 1);
+    background-color: white ;
+  }
+  .omiyagebtn{
+    padding-bottom: 11%;
+  }
+  
+  /* 湯の町散策コース */
+  #course{
+    background-color: rgba(176, 215, 211,.3); 
+    padding-bottom: 10%;
+    width: 100%;
+  }
+  
+  #course .sanpoimg{
+    width: 50%;
+    max-width: 100%;
+    padding-top: 1%;
+  }
+  
+  .sanpopic{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  /* 湯の町詳細を見るのボタン */
+  #course  .btnsec{
+    width: 30%;
+    min-width: 150px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 8px 20px;
+    background-color:white ;
+    border-style:  dotted;
+    border-color: gray;
+    border-width: 2px;
+    border-radius: 25px;
+    font-size: 2rem;
+  }
+  
+  #course .btnsec:hover{
+    margin-top: 5px;
+    box-shadow: 0 4px rgba(191, 191, 191, 1);
+    background-color: white ;
+  }
+  .btnsec{
+    padding-bottom: 15%;
+  }
+  
+  /* おみやげ黒百合へのアクセス */
+  #access{
+   max-width: 960px;
+   width: 100%;
+   margin: 0 auto;
+   padding-bottom: 17%;
+  
+  }
+  
+  #access ul{
+  margin: auto;
+  padding-left: 5%;
+  width: 80%;
+  text-align: left;
+  }
+  
+  .accesspic{
+    display: block;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+  
+  #access .howtoget{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding-top: 3%;
+    position: relative;
+    z-index: 0;
+  }
+  /* 車でのアクセス */
+  .access-car{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 2;
+    font-size: 1.3rem;
+    width: 40%;
+    }
+
+  /* 電車でのアクセス */
+  .access-train{
+    position: absolute;
+    z-index: 3;
+    top:50%;
+    left:54%;
+    font-size: 1.3rem;
+    width: 40%;
+  }
+  
+  .title-course{
+    width: 40%;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom:7%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .title-access{
+    width: 50%;
+    padding-top: 10%;
+    padding-bottom:7%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #access .map{
+  padding-left: 5%;
+  }
+  
+  /* ------------------------ここからお土産紹介ページ */
+/* おみやげページheader */
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  padding-top: 2.3%;
+  padding-bottom: 5%;
+  max-width: 960px;
+  width: 100%;
+  margin:0 auto;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+/* headerここまで */
+
+.souvenir-wrapper{
+  background-color: rgba(232, 184, 119,.25); 
+}
+
+.souvenir-goods{
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;  
+  text-align: center;
+}
+
+/* 文字サイズ */
+.souvenir-goods .mini{
+  font-size: 1.4rem;
+}
+
+/* フレックスボックス */
+.gero-mist,
+.gero-kei
+{
+  display: block;
+  justify-content: space-between;
+  background-color: white;
+  margin-bottom: 15%;
+  margin-top:8%;
+}
+.gero-nyuyokuzai
+{
+  display: block;
+  justify-content: space-between;
+  background-color: white;
+}
+
+/* 下呂温泉みすと */
+.goods-mistpic{
+  width: 42%;
+  max-width: 100%;
+  margin: auto;
+  height: auto;
+  padding-left: 2%;
+  }
+
+.mist-desc{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 5%;
+}
+
+.mist-hukidasi{
+  max-width: 60%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+/* くまちゃんのけいちゃん */
+
+.goods-keipic{
+  width: 45%;
+  max-width: 100%;
+  height: auto;
+  padding:3% 0;
+  padding-left: 0.7%;
+  padding-bottom: 5%;
+}
+
+.kei-desc{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 5%;
+}
+
+.hukidasi-kei{
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+
+/* 鷺の足湯の入浴剤 */
+.goods-sagipic{
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+  padding:3% 0% 0% 0%;
+  padding-left: 2%;
+}
+.nyuyoku-desc{
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  position: relative;
+  padding: 5%;
+}
+.sagi-hukidasi{
+  max-width: 70%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+}
+  
+  /* ------------ここから湯の町散策コース */
+  
+  .sanpo-wrapper{
+    background-color: rgba(157, 206, 201, .8);
+  }
+  
+  /* 背景イラスト */
+  #walk{
+    background-image: url(../images/walkaound/test.png);
+    background-position: center top;
+  }
+  
+  /* .walkpic{
+    width: 40%;
+    margin: 0 auto;
+  }
+   */
+  
+  /* .first-line{ 
+    display: block;
+  } */
+
+    /* 画像のサイズ */
+  .course-introduce .marui{
+   width: 35rem;
+  }
+  .course-introduce{
+    max-width: 520px;
+    width: 100%;
+    margin:0 auto;
+  }
+  
+  /* 文字 */
+  .course-introduce .time{
+    width: 7rem;
+    position: absolute;
+    top: 90%;
+    left: 70%;
+  }
+  .course-introduce .time-sec{
+    width: 7rem;
+    position: absolute;
+    top: 85%;
+    right: 90%;
+  }
+  .course-introduce .right-p{
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    font-size: 1.6rem;
+    width: 86%;
+    max-width: 100%;
+  }
+  .course-introduce .left-p{
+    position: absolute;
+    top: 6%;
+    right: 30%;
+    font-size: 1.6rem;
+    width: 60%;
+    max-width: 100%;
+  }
+  
+  .left-p::first-line{
+    color: #339999;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  .right-p::first-line{
+    color: #339999;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /*右と左のセクション */
+  .kuroyuri,
+  .otera,
+  .senda{
+  position: relative;
+  margin-left: 2%;
+  margin-top: 9%;
+  }
+  
+  .sagi,
+  .sakaya,
+  .roten{
+    position: relative;
+    margin-left: 150px;
+    margin-top: 13%;
+  }
+  
+  .roten .marui{
+    padding-bottom: 100px;
+  }
+   /*フレックスボックス  */
+   .first-line,
+   .second-line,
+   .third-line{
+     display: block;
+   }
+  
+  
+  /* --------------------------------------------------ここからfooter */
+  /* メインページのfooter */
+  .main-footer{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+   background-color: rgba(232, 184, 119,.25);
+  }
+  
+  .main-footer nav{
+    padding-top: 20px;
+    padding-bottom: 30px;
+  } 
+  
+  .main-footer nav a:hover{
+    color: gray;
+  }
+  
+  /* おみやげページfooter */
+  .omiyage-footer{
+    padding-top: 100px;
+    position: relative;
+    margin: 0 auto;
+   background-color: rgba(232, 184, 119,.25);
+   font-size: 0;
+  }
+  
+  .omiyage-footer h1{
+    position:absolute; 
+   bottom: 5%;
+   left: 10%;
+   width: 15%;
+  }
+  
+  /* 散歩ページfooter */
+  .sanpo-footer{
+    background-color: rgba(157, 206, 201, .8);
+    padding-top: 100px;
+    position: relative;
+    margin: 0 auto;
+   font-size: 0;
+  }
+
+  .sanpo-footer h1{
+   position:absolute; 
+   bottom: 35%;
+   left: 42%;
+   width: 120px;
+  }
+
+}
+/* ここから520px以下 */
+
+@media (max-width:520px){
+ /* ここから共通部分 */
+ *,
+ *:before,
+ *:after{
+   box-sizing: inherit;
+ }
+ 
+ html{
+   box-sizing:border-box;
+   font-size: 62.5%;
+ }
+ 
+ a{
+   text-decoration:none;
+   color: black;
+ }
+ li{
+   list-style: none;
+ }
+ 
+ body{
+ font-family: 'M PLUS Rounded 1c', sans-serif;
+ font-family: 'Outfit', sans-serif;
+ font-family: 'Playfair Display', serif;
+ font-family: 'Zen Maru Gothic', sans-serif;
+ font-family: 'Zen Old Mincho', serif;
+ line-height: 1.7;
+ color: black;
+ font-size: 1.7rem;
+ width: 100%;
+ }
+ 
+ img{
+   width: 100%;
+ }
+ 
+ .title-desc{
+   padding-bottom: 7%;
+   max-width: 520px;
+   width: 80%; 
+   margin: 0 auto;
+ }
+ 
+ .content-wrapper{
+  padding-left: 4rem; 
+ padding-right: 4rem;
+}
+
+ /* ここまで共通部分 */
+ 
+ /* ここからheader部分 */
+ .header-container{
+  display: flex;
+  align-items: start;
+  padding-top: 0px;
+  margin: 0 auto;
+  position: relative;
+  margin-left:auto;
+  justify-content: space-between;
+  max-width: 520px;
+}
+
+ /* ロゴ画像 */
+ header h1 img{
+   width: 130px;
+   margin: 30px 30px;
+ }
+
+ /* ナビゲーション */
+ .header-container ul{
+  display: block;
+ }
+
+ header a:hover{
+ color: white;
+ }
+
+.menu li{
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ハンバーガーメニュー */
+/* クリック前のボタン */
+.nav_toggle {
+  display: block;
+  position: fixed;
+  width: 3rem;
+  height: 2.1rem;
+  right: 1.3rem;
+  top: 2.6rem;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.nav_toggle i {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  transition: transform .3s, opacity .4s;
+}
+.nav_toggle i:nth-child(1) {
+  top: 0;
+}
+.nav_toggle i:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.nav_toggle i:nth-child(3) {
+  bottom: 0;
+}
+
+/* クリック後のボタン */
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(9px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-11px) rotate(45deg);
+}
+
+/* メニュー */
+.gnav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  background:rgba(189, 195, 199,.8);
+  z-index: 89;
+  text-align: center;
+}
+.nav_menu_ul{
+  padding-top: 5rem;
+}
+.nav_menu_ul li{
+margin-top: 2rem;  
+}
+
+.gnav.show {
+  opacity: 1;
+  visibility: visible;
+}
+/* ハンバーガーここまで */
+
+ /*大きな背景画像 */
+#home{
+  background-image: url(../images/firstview/background.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  z-index: 5;
+}
+ /* ここまでheader */
+
+ /* 下呂温泉で、大正時代から続くお土産屋 */
+.omiyageya{
+  position: relative;
+}
+#big-sentence{
+  width: 38%;
+  min-width: 250px;
+  position: absolute;
+  right: 22%;
+  top: 142px;
+}
+
+ /* ここからmain */
+/* 山のイラスト */
+main .fix-mountain{
+  position: relative;
+}
+
+#mountain{
+  position: fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
+  z-index: 3;
+  font-size: 0;
+  opacity: 70%;
+  display: none;
+}
+/* TOPへ戻る */
+.fix-mountain .top{
+  position:fixed;
+  bottom:   3%;
+  right: 10%;
+  z-index: 4;
+  color: white;
+  font-size: 2.;
+  display: none;
+}
+
+ /* おみやげ黒百合について */
+ .about-shop{
+   display: block;
+   align-items: center;
+   padding-top: 10%;
+   max-width: 520px;
+   text-align: center;
+ }
+ 
+ .about-shop section{
+   width: 100%;
+   max-width: 100%;
+   margin-left: 0%;
+   margin-top: 3%;
+   text-align: left;
+ }
+ 
+ .about-shop img{
+   width: 82%;
+   height:auto;
+  margin: 0 auto;
+   max-width: 100%;
+   margin-left: 0%;
+ }
+ 
+ /* 下呂温泉について */
+ .about-gero{
+   display: block;
+   flex-direction: row-reverse;
+   align-items: center;
+   padding-top: 3%; 
+   padding-bottom: 7%;
+   max-width: 520px;
+  text-align: center;
+ }
+ 
+ .about-gero section{
+   width: 100%;
+   max-width: 100%;
+  margin-right: 0%;
+  text-align: left;
+  margin-top: 3%;
+ }
+ 
+ .about-gero img{
+   width: 82%;
+   max-width: 100%;
+   height: auto;
+   margin-right: 0%;
+ }
+ 
+ /* おみやげ */
+ .title{
+   max-width: 520px;
+   width: 46%;
+   height: auto;
+   padding-top: 6%;
+   padding-bottom:7%;
+   display: block;
+   margin: 0 auto;
+ }
+
+ .omiyage-goods{
+   display: flex;
+   text-align: center;
+   max-width: 520px;
+   margin:0 auto;
+   padding-bottom: 8%;
+ }
+
+ #souvenir{
+   background-color: rgba(232, 184, 119,.25); 
+   width: 100%;
+ }
+ .omiyage-goods .mist{
+   width: 33%;
+   max-width: 100%;
+   margin-left: 0%;
+ }
+ .omiyage-goods .kei{
+   width: 33%;
+   max-width: 100%;
+   margin-left: 0%;
+ }
+ .omiyage-goods .nyuyokuzai{
+   width: 30%;
+   max-width: 100%;
+   margin-left: 8%;
+ }
+ 
+ /* おみやげ詳細を見るのボタン */
+ #souvenir .btn{
+   width: 50%;
+   min-width: 150px;
+   max-width: 100%;
+   display: block;
+   margin: 0 auto;
+   text-align: center;
+   padding: 8px 20px;
+   background-color:white ;
+   color: black;
+   border-style:  dotted;
+   border-color: gray;
+   border-width: 2px;
+   border-radius: 25px;
+   font-size: 1.7rem;
+ }
+ 
+ #souvenir .btn:hover{
+   margin-top: 5px;
+   box-shadow: 0 4px rgba(191, 191, 191, 1);
+   background-color: white ;
+ }
+ .omiyagebtn{
+   padding-bottom: 15%;
+ }
+ 
+ /* 湯の町散策コース */
+ #course{
+   background-color: rgba(176, 215, 211,.3); 
+   padding-bottom: 12%;
+   width: 100%;
+ }
+ 
+ #course .sanpoimg{
+   width: 50%;
+   max-width: 100%;
+   padding-top: 1%;
+   margin-bottom: 10%;
+ }
+ 
+ .sanpopic{
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   max-width: 520px;
+   margin: 0 auto;
+ }
+ /* 湯の町詳細を見るのボタン */
+ #course  .btnsec{
+   width: 50%;
+   min-width: 150px;
+   max-width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   padding: 8px 20px;
+   background-color:white ;
+   border-style:  dotted;
+   border-color: gray;
+   border-width: 2px;
+   border-radius: 25px;
+   font-size: 1.7rem;
+ }
+ 
+ #course .btnsec:hover{
+   margin-top: 5px;
+   box-shadow: 0 4px rgba(191, 191, 191, 1);
+   background-color: white ;
+ }
+ .btnsec{
+   padding-bottom: 15%;
+ }
+ 
+ /* おみやげ黒百合へのアクセス */
+ #access{
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 19%;
+ 
+ }
+ 
+ #access ul{
+ padding-left: 0%;
+ width: 100%;
+ text-align: left;
+ }
+ 
+ .accesspic{
+   display: block;
+   align-items: center;
+   padding-bottom: 2%;
+ }
+ 
+ #access .howtoget{
+   width: 100%;
+   max-width: 520px;
+   margin: 0 auto;
+   padding-top: 3%;
+   position: relative;
+   z-index: 0;
+ }
+ /* 車でのアクセス */
+ .access-car{
+   position: absolute;
+   top: 38%;
+   left: 2%;
+   z-index: 2;
+   font-size: 1.2rem;
+   width: 45%;
+   }
+
+ /* 電車でのアクセス */
+ .access-train{
+   position: absolute;
+   z-index: 3;
+   top:38%;
+   left:54%;
+   font-size: 1.3rem;
+   width: 45%;
+ }
+ 
+ .title-course{
+   width: 50%;
+   height: auto;
+   padding-top: 10%;
+   padding-bottom:7%;
+   display: block;
+   margin: 0 auto;
+ }
+ 
+ .title-access{
+   width: 80%;
+   padding-top: 10%;
+   padding-bottom:9%;
+   display: block;
+   margin: 0 auto;
+ }
+ 
+ #access .map{
+ padding-left: 0%;
+ }
+ 
+ /* ------------------------ここからお土産紹介ページ */
+/* おみやげページheader */
+.header-wrapper{
+ display: flex;
+ align-items: center;
+ padding-top: 2.3%;
+ padding-bottom: 5%;
+ max-width: 520px;
+ width: 100%;
+ margin:0 auto;
+ justify-content: space-between;
+ padding: 0 4%;
+}
+/* headerここまで */
+
+.souvenir-wrapper{
+ background-color: rgba(232, 184, 119,.25); 
+}
+
+.souvenir-goods{
+ max-width: 520px;
+ width: 100%;
+ margin: 0 auto;  
+ text-align: center;
+}
+
+/* 文字サイズ */
+.souvenir-goods .mini{
+ font-size: 1.4rem;
+}
+
+/* フレックスボックス */
+.gero-mist,
+.gero-kei
+{
+ display: block;
+ justify-content: space-between;
+ background-color: white;
+ margin-bottom: 15%;
+ margin-top:8%;
+}
+.gero-nyuyokuzai
+{
+ display: block;
+ justify-content: space-between;
+ background-color: white;
+}
+
+/* 下呂温泉みすと */
+.goods-mistpic{
+ width: 42%;
+ max-width: 100%;
+ margin: auto;
+ height: auto;
+ padding-left: 2%;
+ }
+
+.mist-desc{
+ width: 100%;
+ max-width: 100%;
+ text-align: center;
+ position: relative;
+ padding: 5%;
+}
+
+.mist-hukidasi{
+ max-width: 50%;
+ width: 100%;
+ height: auto;
+ position: absolute;
+ top: 10%;
+ left: 25%;
+}
+
+/* くまちゃんのけいちゃん */
+
+.goods-keipic{
+ width: 45%;
+ max-width: 100%;
+ height: auto;
+ padding:3% 0;
+ padding-left: 0.7%;
+ padding-bottom: 5%;
+}
+
+.kei-desc{
+ width: 100%;
+ max-width: 100%;
+ text-align: center;
+ position: relative;
+ padding: 5%;
+}
+
+.hukidasi-kei{
+ max-width: 60%;
+ width: 100%;
+ height: auto;
+ position: absolute;
+ top: 10%;
+ left: 20%;
+}
+
+/* 鷺の足湯の入浴剤 */
+.goods-sagipic{
+ width: 40%;
+ max-width: 100%;
+ height: auto;
+ padding:3% 0% 0% 0%;
+ padding-left: 2%;
+}
+.nyuyoku-desc{
+ width: 100%;
+ max-width: 100%;
+ text-align: center;
+ position: relative;
+ padding: 5%;
+}
+.sagi-hukidasi{
+ max-width: 60%;
+ width: 100%;
+ height: auto;
+ position: absolute;
+ top: 10%;
+ left: 19%;
+}
+ 
+ /* ------------ここから湯の町散策コース */
+ 
+ .sanpo-wrapper{
+   background-color: rgba(157, 206, 201, .8);
+ }
+ 
+ /* 背景イラスト */
+ #walk{
+   background-image: url(../images/walkaound/test.png);
+   background-position: center top;
+ }
+ 
+   /* 画像のサイズ */
+ .course-introduce .marui{
+  width: 28rem;
+ }
+ .course-introduce{
+   max-width: 520px;
+   width: 100%;
+   margin:0 auto;
+ }
+ 
+ /* 文字 */
+ .course-introduce .time{
+   width: 5rem;
+   position: absolute;
+   top: 80%;
+   left: 70%;
+ }
+ .course-introduce .time-sec{
+   width: 5rem;
+   position: absolute;
+   top: 85%;
+   right: 95%;
+ }
+ .course-introduce .right-p{
+   position: absolute;
+   top: 0%;
+   left: 3%;
+   font-size: 1.5rem;
+   width: 86%;
+   max-width: 100%;
+ }
+ .course-introduce .left-p{
+   position: absolute;
+   top: 3%;
+   right: 36%;
+   font-size: 1.5rem;
+   width: 60%;
+   max-width: 100%;
+ }
+ 
+ .left-p::first-line{
+   color: #339999;
+   font-size: 1.6rem;
+   font-weight: bold;
+ }
+ .right-p::first-line{
+   color: #339999;
+   font-size: 1.6rem;
+   font-weight: bold;
+ }
+ 
+ /*右と左のセクション */
+ .kuroyuri,
+ .otera,
+ .senda{
+ position: relative;
+ margin-left: 7%;
+ margin-top: 8%;
+ }
+ 
+ .sagi,
+ .sakaya,
+ .roten{
+   position: relative;
+   margin-left: 14%x;
+   margin-top: 8%;
+ }
+ 
+ .roten .marui{
+   padding-bottom: 100px;
+ }
+  /*フレックスボックス  */
+  .first-line,
+  .second-line,
+  .third-line{
+    display: block;
+  }
+ 
+ 
+ /* --------------------------------------------------ここからfooter */
+ /* メインページのfooter */
+ .main-footer{
+   padding-top: 20px;
+   padding-bottom: 50px;
+   width: 100%;
+   text-align: center;
+   margin: 0 auto;
+  background-color: rgba(232, 184, 119,.25);
+ }
+ 
+ .main-footer nav{
+   padding-top: 20px;
+   padding-bottom: 30px;
+ } 
+ 
+ .main-footer nav a:hover{
+   color: gray;
+ }
+ 
+ .main-footer{
+   background-image: url(../images/firstview/tree2.png);
+   background-size: 100%;
+   background-position: bottom;
+ }
+ /* おみやげページfooter */
+ .omiyage-footer{
+   padding-top: 100px;
+   position: relative;
+   margin: 0 auto;
+  background-color: rgba(232, 184, 119,.25);
+  font-size: 0;
+ }
+ 
+ .omiyage-footer h1{
+   position:absolute; 
+  bottom: 10%;
+  left: 36%;
+  width: 30%;
+ }
+ 
+ /* 散歩ページfooter */
+ .sanpo-footer{
+   background-color: rgba(157, 206, 201, .8);
+   padding-top: 100px;
+   position: relative;
+   margin: 0 auto;
+  font-size: 0;
+ }
+
+ .sanpo-footer h1{
+  position:absolute; 
+ bottom: 30%;
+ left: 39%;
+ width: 20%;
+}
+}
